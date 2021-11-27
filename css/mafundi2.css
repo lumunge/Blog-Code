@@ -1,0 +1,122 @@
+body {
+  background-color: #36454f;
+}
+main {
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.75),
+    -30px 0px 40px rgba(0, 0, 0, 0075);
+  max-width: 900px;
+}
+
+@media (min-width: 500px) {
+  #heady {
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+  #landing {
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+  #aboutus {
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+  #accord {
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+
+  #feed {
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+  #footer {
+    height: auto;
+    width: auto;
+  }
+}
+
+/* @media (min-width: 400px) {
+  #patners {
+    display: none;
+  }
+} */
+
+#searchy {
+  color: #fff;
+}
+
+#jumbotron {
+  height: 452px;
+}
+
+#landing {
+  height: 80vh;
+}
+
+.navbar-nav {
+  list-style-type: none;
+}
+
+.navbar-nav li a:hover {
+  background-color: #faf0be;
+  transition: all 2s ease-out;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: poppins;
+}
+
+.btn-outline-warning {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: poppins;
+}
+.btn-outline-warning:hover {
+  transition: all 2s ease-out;
+  background-color: #36454f;
+  color: #faf0be;
+}
+
+#search:hover {
+  transition: all 2s ease-out;
+  cursor: pointer;
+  color: #3b3c36;
+}
+#footer {
+  background-color: #3b3c36;
+  color: #b2beb5;
+}
+
+footer h3 {
+  color: yellow;
+  text-decoration: none;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+#feedback {
+  color: #b2beb5;
+  background-color: #ed9121;
+}
+/* #accord {
+  height: 60vh;
+} */
+
+#accordbtn {
+  color: #fffdd0;
+  font-weight: bolder;
+}
+
+#useful li a {
+  color: #b2beb5;
+}

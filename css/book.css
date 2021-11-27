@@ -1,0 +1,102 @@
+:root {
+  --primaryColor: ;
+  --secondaryColor: ;
+  --tertiaryColor: ;
+  --mainTransition: ;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+main {
+  /* margin: auto; */
+  /* box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.75), */
+  /* -30px 0px 40px rgba(0, 0, 0, 0075); */
+  /* max-width: 900px; */
+  overflow: hidden;
+}
+
+#formation {
+  color: #f5f5f5;
+  font-weight: 600;
+}
+
+.welcometext {
+  color: #;
+  font-family: poppins;
+  font-weight: 200;
+  text-align: center;
+}
+
+#futa {
+  background-color: #1b1b1b;
+  color: #eedc82;
+  font-weight: 100;
+}
+
+.btm {
+  text-align: center;
+  color: #eedc82;
+  font-size: 16px;
+  font-family: poppins;
+}
+#useful li a {
+  color: #eedc82;
+}
+.logo-img {
+  width: 300px;
+}
+
+.error {
+  color: red;
+}
+
+/* REFUNDS MODAL */
+/* MODAL */
+#simplemodal {
+  /* background: #000000; */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(60, 30, 12, 0.45);
+}
+.modalcontent {
+  background-color: #f4f4f4;
+  margin: 20% auto; /*moving up and down with percentage and side is auto*/
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopened;
+  animation-duration: 1s;
+}
+.closeButton {
+  float: right;
+  color: #ccc;
+  font-size: 30px;
+}
+.closeButton:hover,
+.closeButton:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+@keyframes modalopened {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

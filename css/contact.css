@@ -1,0 +1,47 @@
+body {
+  margin: 50px 0px;
+  padding: 0px;
+  text-align: center;
+  align: center;
+  background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)),
+    url(bgimg.jpg), no-repeat center center fixed;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: all 4s ease-in-out;
+  display: inline-table;
+}
+
+/*
+.contactTitle {
+  margin-top: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+}
+.contactTitle h1 {
+  font-size: 32px;
+  line-height: 10px;
+}
+.contactTitle h2 {
+  font-size: 16px;
+}
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+ */

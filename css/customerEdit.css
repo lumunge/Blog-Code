@@ -1,0 +1,58 @@
+main {
+  background: linear-gradient(#c72c48, #f64a8a, #fd6c9e);
+  height: 100%;
+  width: 100%;
+}
+.wrapper {
+  text-align: center;
+}
+
+#mation {
+  margin: 0 auto;
+  width: 50%;
+  border: 1px solid #000;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px #c74375;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+}
+label {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: poppins;
+}
+
+.bttn {
+}
+
+#hmu {
+  color: #000;
+  font-family: poppins;
+  font-size: 1.2rem;
+}
+
+#hmu:hover {
+  transition: all 1s ease-out;
+  background-color: #ffbf00;
+  color: #000;
+}
+
+.bttn {
+  background-color: #ffbf00;
+}
+
+.bttn:hover {
+  transition: all 1s ease-out;
+  background: transparent;
+  border: 2px solid #ffbf00;
+}
+
+#right {
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}

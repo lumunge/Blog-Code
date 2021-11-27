@@ -1,0 +1,60 @@
+main {
+  top: 0;
+  left: 0;
+  background: linear-gradient(#ff7e00, #0047ab, #483d8b);
+   height: 200vh;
+  width: 100%;
+}
+
+#jumbo {
+  background: initial;
+}
+
+#hmu {
+  color: #fff;
+  font-family: poppins;
+  font-size: 1.2rem;
+}
+
+#hmu:hover {
+  transition: all 1s ease-out;
+  background-color: #ffbf00;
+  color: #000;
+}
+
+.bttn {
+  background-color: #ffbf00;
+}
+
+.bttn:hover {
+  transition: all 1s ease-out;
+  background: transparent;
+  border: 2px solid #ffbf00;
+}
+
+.pay {
+  color: #fff;
+  font-weight: bold;
+  font-family: poppins;
+  font-size: 1.2rem;
+}
+
+.pay:hover {
+  background: transparent;
+  color: #000;
+  transition: all 1s ease-out;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  font-family: poppins;
+}
+#mytable2 td {
+  color: #fff;
+}
+
+#printableArea2 {
+  background: initial;
+  color: #fff;
+}

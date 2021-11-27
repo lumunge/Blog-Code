@@ -1,0 +1,61 @@
+main {
+  background: linear-gradient(#2a52be, #e52b50, #d3212d);
+  height: 100vh;
+  width: 100%;
+}
+
+#hmu {
+  color: #000;
+  font-family: poppins;
+  font-size: 1.2rem;
+}
+
+#hmu:hover {
+  transition: all 1s ease-out;
+  background-color: #ffbf00;
+  color: #000;
+}
+
+.bttn {
+  background-color: #ffbf00;
+}
+
+.bttn:hover {
+  transition: all 1s ease-out;
+  background: transparent;
+  border: 2px solid #ffbf00;
+}
+
+.pay {
+  color: #000;
+  font-weight: bold;
+  font-family: poppins;
+  font-size: 1.2rem;
+}
+
+.pay:hover {
+  background: transparent;
+  color: #000;
+  transition: all 1s ease-out;
+}
+
+.title {
+  text-align: center;
+  color: #000;
+  font-family: poppins;
+}
+
+#dataTable th {
+  font-size: 1.2rem;
+  font-family: poppins;
+}
+#dataTable td {
+  color: #fff;
+  font-family: poppins;
+  font-size: 1rem;
+}
+
+#printableArea2 {
+  background: initial;
+  color: #000;
+}

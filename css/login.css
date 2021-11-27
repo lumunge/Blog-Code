@@ -1,0 +1,42 @@
+body {
+  background-image: url("../img/fundi2bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#logo img {
+  width: 70%;
+}
+
+#login-image {
+  background-image: url("../img/plumbing9.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#formation {
+  color: #fbceb1;
+  background-color: #3b2f2f;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.navbar-brand {
+  width: 500px;
+}
+
+.title {
+  color: #ffbf00;
+  text-align: center;
+  font-size: 25px;
+}
+
+.futa {
+  text-align: center;
+  color: #efdecd;
+  font-size: 15px;
+  font-family: cursive;
+  margin-top: 20px;
+}

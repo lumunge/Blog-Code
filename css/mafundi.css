@@ -1,0 +1,229 @@
+:root {
+  --primaryColor: #000000;
+  --secondaryColor: #fefefa;
+  --tertiaryColor: #ff9966;
+  --mainTransition: all 2s ease-out;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.carousel-caption #sinlog {
+  background-color: red;
+}
+
+#landingHeading {
+  color: red;
+}
+
+#searchy {
+  margin: 50px;
+}
+#tech {
+  margin-bottom: 150px;
+}
+
+#feedback {
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#feedbackform {
+  display: none;
+}
+#sinlog {
+  margin-bottom: 150px;
+}
+
+#accord {
+  height: 70vh;
+}
+
+.searchtxt {
+  color: var(--tertiaryColor);
+}
+
+#ctitle {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--tertiaryColor);
+}
+
+.us {
+  font-size: 30px;
+  color: var(--tertiaryColor);
+}
+
+/* modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: transparent;
+}
+.modal-content {
+  margin: auto; /*moving up and down with percentage and side is auto*/
+  padding: 20px;
+  width: 40%;
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+.closeBtn {
+  float: right;
+  color: var(--secondaryColor);
+  font-size: 30px;
+}
+.closeBtn:hover,
+.closeBtn:focus {
+  color: var(--primaryColor);
+  background-color: lightgreen;
+  text-decoration: none;
+  cursor: pointer;
+}
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* modal2 */
+.modal-content2 {
+  margin: auto; /*moving up and down with percentage and side is auto*/
+  padding: 20px;
+  width: 40%;
+  animation-name: modalopen2;
+  animation-duration: 1s;
+}
+.closeBtn2 {
+  float: right;
+  color: var(--secondaryColor);
+  font-size: 30px;
+}
+.closeBtn2:hover,
+.closeBtn2:focus {
+  color: var(--primaryColor);
+  background-color: lightgreen;
+  text-decoration: none;
+  cursor: pointer;
+}
+@keyframes modalopen2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* modal3 */
+.modal-content3 {
+  margin: auto; /*moving up and down with percentage and side is auto*/
+  padding: 20px;
+  width: 40%;
+  animation-name: modalopen3;
+  animation-duration: 1s;
+}
+.closeBtn3 {
+  float: right;
+  color: #ccc;
+  font-size: 30px;
+}
+.closeBtn3:hover,
+.closeBtn3:focus {
+  color: #000;
+  background-color: lightgreen;
+  text-decoration: none;
+  cursor: pointer;
+}
+@keyframes modalopen3 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#patners img {
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#ttle {
+  color: var(--secondaryColor);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 300;
+}
+
+.txty {
+  color: var(--secondaryColor);
+}
+
+.values {
+  font-size: 50px;
+  color: var(--secondaryColor);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#modalBtn {
+  color: var(--primaryColor);
+  border: 2px solid var(--tertiaryColor);
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: poppins;
+}
+
+#modalBtn:hover {
+  transition: var(--mainTransition);
+  background: var(--secondaryColor);
+}
+
+#modalBtn2:hover {
+  transition: var(--mainTransition);
+  background: var(--secondaryColor);
+}
+
+#modalBtn3:hover {
+  transition: var(--mainTransition);
+  background: var(--secondaryColor);
+}
+
+#modalBtn2 {
+  color: var(--primaryColor);
+  border: 2px solid var(--tertiaryColor);
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: poppins;
+}
+
+#modalBtn3 {
+  color: var(--primaryColor);
+  border: 2px solid var(--tertiaryColor);
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: poppins;
+}
+
+#learn {
+  margin: 0.7rem;
+  padding: 0.8rem;
+  border: var(--secondaryColor);
+  color: var(--primaryColor);
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: poppins;
+}
+
+#learn:hover {
+  transition: var(--mainTransition);
+  background: var(--secondaryColor);
+}

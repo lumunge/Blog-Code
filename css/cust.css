@@ -1,0 +1,117 @@
+main {
+  background: linear-gradient(#f7e7ce, #1b1811);
+}
+
+.landing-content {
+  text-align: center;
+}
+
+.booking-form {
+  margin: 0 auto;
+  width: 70%;
+}
+
+#hmu,
+#modalBtn,
+#modalButton {
+  color: #000000;
+  font-size: 1.2rem;
+  font-family: poppins;
+}
+#hmu:hover {
+  background: #ff3800;
+  color: #fff;
+  transition: all 1s ease-in;
+  cursor: pointer;
+}
+
+#modalBtn:hover {
+  background: #ff3800;
+  color: #fff;
+  transition: all 1s ease-in;
+  cursor: pointer;
+}
+
+#modalButton:hover {
+  background: #ff3800;
+  color: #fff;
+  transition: all 1s ease-in;
+  cursor: pointer;
+}
+
+.form-label {
+  color: #ff3800;
+  font-size: 1.2rem;
+  font-family: poppins;
+}
+form {
+  border: 2px solid #000000;
+  padding: 2rem;
+  margin-left: 1rem;
+}
+
+.btn-book {
+  border: 2px solid #03c03c;
+  background: #fff;
+}
+.btn-reset {
+  border: 2px solid gray;
+  background: #fff;
+}
+
+.btn-book:hover {
+  transition: all 1s ease-out;
+  background: #03c03c;
+  color: #000000;
+}
+
+.btn-reset:hover {
+  transition: all 1s ease-out;
+  background: gray;
+  color: #000000;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(60, 30, 12, 0.45);
+}
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 20% auto; /*moving up and down with percentage and side is auto*/
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+.closeBtn {
+  float: right;
+  color: #ccc;
+  font-size: 30px;
+}
+.closeBtn:hover,
+.closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+label {
+  color: #fff;
+  font-size: 1.2rem;
+}

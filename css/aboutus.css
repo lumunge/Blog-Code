@@ -1,0 +1,59 @@
+/* body {
+  margin: 50px 0px;
+  padding: 0px;
+  background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)),
+    url(bgimg.jpg), no-repeat center center fixed;
+  font-family: sans-serif;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+/* body {
+  background-image: url("toolz1.jpeg");
+}
+.carousel-container {
+  width: 80%;
+  margin: auto;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-slide {
+  display: flex;
+  width: 50%;
+  height: 200px;
+}
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+} */
+
+/* */
+
+.carousel {
+  background: #2f4357;
+  margin-top: 20px;
+}
+.carousel-item {
+  text-align: center;
+  min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.bs-example {
+  margin: 20px;
+}

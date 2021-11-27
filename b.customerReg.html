@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hello, world!</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--Font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Css-->
+  <link rel="stylesheet" href="mafundi.css">
+</head>
+
+<body>
+  <!--Navbar Section-->
+  <nav class="navbar py-4 navbar-light navbar-expand-md navbar-expand-lg bg-dark">
+    <!--Logo-->
+    <a href="a.home.html" class="navbar-brand text-uppercase font-italic lead" style="font-size: 32px;"><i
+        class="fa fa-gears fa-2x"></i>Mafundi Sacco.
+      <!--Subscript--></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarLinks">
+      <ul class="nabar-nav">
+        <li class="nav-item active float-left">
+          <a href="a.home.html" class="nav-link"><i class="fa fa-home fa-2x"></i>mafundiHome.</a>
+        </li>
+        <li class="nav-item float-left">
+          <a href="b.customerReg.html" class="nav-link"><i class="fa fa-user-plus fa-2x"></i>New User?</a>
+        </li>
+        <li class="nav-item float-left">
+          <a href="c.newsandupdates.html" class="nav-link"><i class="fa fa-newspaper-o fa-2x"></i>News & Updates.</a>
+        </li>
+        <li class="nav-item float-left">
+          <a href="d.feedback.html" class="nav-link"><i class="fa fa-question-circle-o fa-2x"></i>Feedback & FAQS</a>
+        </li>
+        <li class="nav-item float-left">
+          <a href="e.help.html" class="nav-link"><i class="fa fa-bars fa-2x"></i>Help Desk.</a>
+        </li>
+      </li>
+      <li class="nav-item float-right">
+        <a href="e.help.html" class="nav-link"><i class="fa fa-search fa-2x"></i></a>
+      </li>
+      </ul>
+      
+    </div>
+  </nav>
+
+  <!--Customer Registration form-->
+  <section id="contact" class="py-5 bg-danger">
+    <div class="container">
+      <!--Section title-->
+      <div class="row">
+        <div class="col text-center haiti">
+          <h1 class="text-uppercase text-dark md-0"><strong>Thank You for choosing Mafundi for the
+              Job!</strong></h1>
+          <div class="title-underline bg-primary"></div>
+          <p style="font-size: 20px; color: burlywood; text-align: left; font-family: Poor Richard;">Instructions:</p>
+          <div class="mt-2 text-capitalize text-warning"><i class="fa fa-quote-left fa-2x fa-pull-center fa-border">If
+              you are a new user and you intend to use the system please fill out the form below with the correct
+              credentials and make sure to wire the registration fee of ksh 100 through Mobile Banking(<i>Mpesa<i
+                  class="fa fa-mobile text-success"></i> <i class="fa fa-money text-success"></i></i>) for your request
+              to be processed.</i></div>
+        </div>
+      </div>
+      <!--End of section title-->
+    </div>
+    <div class="row">
+        <div class="col-md-6 about-picture2 rounded w-60">
+          </div>
+      <div class="col-md-6  rounded w-60">
+        <div class="card card-body bg-warning">
+          <div class="card-title text-center text-white">
+            <h2 class="text-capitalize">Please Fill out the form with the required details.</h2>
+            <p>New user sign in</p>
+          </div>
+          <!--End of title-->
+          <form action = "http://localhost/MafundiRequisition/mafundiProcess.php" method = "POST">
+            
+            <!--Full name-->
+            <!--Input group-->
+            <div class="input-group my-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-dark text-info px-3 "><i class = "fa fa-user fa-2x"></i>  Username</span>
+              </div>
+              <input type="text" name="name" id="name" class="form-control" required>
+              <br>
+              <br>
+            </div>
+            <!--Phone-->
+            <div class="input-group my-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-dark text-info px-4 "><i class = "fa fa-phone fa-2x"></i>+254</span>
+                </div>
+                <input type="tel" name="phone" id="phone" class="form-control" required pattern = '\d{2}\d{4}\d{4}' title = "Phone Number (Format: 07********)">
+              </div>
+            <!--Email-->
+            <div class="form-group mt-3">
+              <input type="email" name="email" id="email" class="form-control form-control-lg"
+                placeholder="Email Adress(eg: joe@example.com.) Required.">
+                <span class = "error"><?php echo $emailErr; ?></span>
+            </div>
+            <!--Service dropdown-->
+            <div class="form-group mt-3">
+              <div class="dropdown-content">
+                <select class="form-control form-control-lg text-danger bg-info hover-secondary px-5" name = "service">
+                  <option>Windows</option>
+                  <option>Doorlock Breaking</option>
+                  <option>Wiring</option>
+                  <option>Painting</option>
+                  <option>Inner Decorations</option>
+                  <option>Water Heater</option>
+                  <option>Plumbing</option>
+                  <option>Hanging Lines</option>
+                  <option>Broken taps</option>
+                  <option>Broken Pipes</option>
+                  <option>Blocked Sink</option>
+                  <option>Blocked Toilet</option>
+                  <option>Broken shower</option>
+                  <option>Gas Services</option>
+                  <option>Garbage Collection</option>
+                </select>
+              </div>
+            </div>
+            <!--Location Dropdown-->
+            <div class="form-group mt-3">
+              <div class="dropdown-content">
+                <select class="form-control form-control-lg text-danger bg-info hover-secondary px-5" name = "location">
+                  <option>Mathare</option>
+                  <option>Runogone</option>
+                  <option>PoshMart</option>
+                  <option>Makutano</option>
+                  <option>Meru Town</option>
+                  <option>Mejjas</option>
+                  <option>Tuliza Fm</option>
+                </select>
+              </div>
+            </div>
+            <!--House Dropdown-->
+            <div class="form-group mt-3">
+                <div class="dropdown-content">
+                  <select class="form-control form-control-lg text-danger bg-info hover-secondary px-5" name = "house">
+                    <option>Glass House</option>
+                    <option>Scholars Plaza</option>
+                    <option>Hilltop</option>
+                    <option>Orange House</option>
+                    <option>Yellow House</option>
+                    <option>Joshuas</option>
+                    <option>Four J</option>
+                    <option>Past Mathare</option>
+                    <option>Runogone</option>
+                    <option>Around Mejjas</option>
+                    <option>PoshMart</option>
+                  </select>
+                </div>
+              </div>
+            <!--Floor no(Validated)-->
+            <div class="row">
+              <div class="form-group mt-3 col-sm-3">
+                <input type="number" name="floorno" id="floorno" min="0" max="10" class="form-control form-control-lg fa-fa-phone"
+                  placeholder="Floor No.">
+              </div>
+
+              <!--House Number-->
+              <div class="form-group mt-3 col-sm-3">
+                <input type="number" name="hseno" id="hsno" min="1" max="50" class="form-control form-control-lg"
+                  placeholder="Hse No.">
+              </div>
+              <!--Time Stamp-->
+              <div class="form-group mt-3 col-sm-3">
+                <input type="time" name="time" id="time" class="form-control form-control-lg" placeholder="time" required>
+              </div>
+              <!--Date-->
+              <div class="form-group mt-3 col-sm-3">
+                  <input type="date" name="date" id="date" class="form-control form-control-lg" placeholder="date/time">
+                </div>
+            </div>
+            <!--Hse Description-->
+            <div class="form-group mt-3">
+              <label for="comment" class="text-light">Additional House Description(House door color, location
+                etc.)</label>
+              <textarea class="form-control " name="addesc" id="comment" rows="5"></textarea>
+            </div>
+            <!--Buttons-->
+            <div class="row">
+                <div class="col-sm-4">
+                <button type="submit" class=" btn pull-center text-right position-relative btn-outline-primary px-3">SIGN-UP?<i class="fa fa-plus fa-2x pull-right"></i>
+                  </form>
+                </button>
+              </div>
+                <div class="col-sm-4">
+              <button type="reset" class=" btn pull-right text-right position-relative btn-outline-primary px-4">ABORT?<i
+                  class="fa fa-close fa-2x pull-right"></i>
+              </button>
+            </div>
+              <div class="col-sm-4">
+              <a href="mafundiHelp.html"><i class="fa fa-question-circle-o fa-3x text-success float-right"></i></a>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+      
+      <!--Google Maps
+      <div class="col-md-6 my-3">
+        <div class="embed-reponsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" src=" " frameborder="0" style="border:0" width="600" height="450"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      End of google maps-->
+    </div>
+  </section>
+  <!--End of customer section-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--Footer Section-->
+  <footer id="footer" class="bg-dark py-5">
+    <div class="container">
+      <!--Section title-->
+      <div class="row form-height">
+        <div class="col text-center">
+          <h1 class="display-4 text-upppercase text-white mb-0"><strong>SHARE<a href="#" class="btn">
+                <i class="fa fa-facebook fa-3x"></i>
+              </a>
+              <a href="#" class="btn">
+                <i class="fa fa-twitter fa-3x"></i>
+              </a></strong>
+            <p>
+              <i class="fa fa-thumbs-o-up fa-1x"></i>
+              <i class="fa fa-thumbs-o-down fa-1x"></i></p>
+          </h1>
+          <!--<div class="title-underline bg-primary"></div>-->
+          <p class="mt-2 text-capitalize text-muted">Reach us on the following social platforms.</p>
+        </div>
+
+      </div>
+      <!--End of title-->
+      <div class="row">
+        <div class="col text-center bg-secondary">
+          <a href="#" class="btn">
+            <i class="fa fa-phone fa-3x text-primary m-2"></i>
+          </a>
+          <a href="#" class="btn">
+            <i class="fa fa-facebook fa-3x text-primary m-2"></i>
+          </a>
+          <a href="#" class="btn">
+            <i class="fa fa-twitter fa-3x text-primary m-2"></i>
+          </a>
+          <a href="#" class="btn">
+            <i class="fa fa-google fa-3x text-primary m-2"></i>
+          </a>
+          <button type="button" class="btn btn-danger d-block mx-auto my-3" data-toggle="modal" data-target="#modal"><i
+              class="fa fa-power-off"></i> Log
+            Out</button>
+          <p class="text-light">All Rights Reserved. Copyright &copy 2019.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--Modal for signing out-->
+  <div class="modal fade" id="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!--Modal Header-->
+        <div class="modal-header">
+          <h3 class="modal-title text-warning">So sorry to see you leave!</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!--Modal Body-->
+        <div class="modal-body">
+          <p class="text-info">We look forward to see you next time be sure to contact us and leave your feedbck so that
+            we can be able to improve our services.</p>
+        </div>
+        <!--Modal footer-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Leave?</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
